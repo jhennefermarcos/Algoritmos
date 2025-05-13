@@ -1,3 +1,4 @@
+package Exercicios.ListaDeExercicios03;
 import java.util.Scanner;
 
 public class Ex9_AreaTrapezio {
