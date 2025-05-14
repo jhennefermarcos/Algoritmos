@@ -70,7 +70,7 @@ obedece a tabela abaixo. */
         if (conceito == 'D' || conceito == 'E') {
             imprimir("Aluno:"+nomeAluno+". Conceito: "+conceito+". Status: Reprovado!");
         }else{
-            imprimir("Aluno:"+nomeAluno+". Conceito:"+conceito+". Status: Aprovado!");
+            imprimir("Aluno:"+nomeAluno+". Conceito: "+conceito+". Status: Aprovado!");
         }
     }
 }

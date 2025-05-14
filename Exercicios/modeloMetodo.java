@@ -13,7 +13,7 @@ public class modeloMetodo {
         String texto;
         texto = tecladoScanner.nextLine();
         return texto;
-    }
+    } //tirar o Line se não quiser que pegue a linha toda, pegue só o primeiro conjunto
 
     public static char lerChar() {
         char caracter;
@@ -25,11 +25,17 @@ public class modeloMetodo {
         double valor;
         valor = tecladoScanner.nextDouble();
         return valor;
-    }
+    } //byte, float, long, short
 
     public static int lerValorInteiro() {
         int valor;
         valor = tecladoScanner.nextInt();
         return valor;
-    }
+    } //byte, float, long, short
+
+    public static boolean lerValorBoolean() {
+        boolean sentença;
+        sentença = tecladoScanner.hasNextBoolean();
+        return sentença;
+    } //verificar
 }

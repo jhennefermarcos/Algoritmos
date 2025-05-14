@@ -31,5 +31,5 @@ public class Ex1_AlturaPredio {
       saida="A altura do prédio é "+ alturaPredio;
       imprimir(saida);
    }
-   }
+}
    
