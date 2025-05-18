@@ -3,7 +3,7 @@ package Exercicios.ListaDeExercicios03;
 import java.util.Scanner;
 
 public class Ex13_IMC {
-    final static Scanner LER_TECLADO = new Scanner(System.in); //CONSTANTE
+     public static Scanner tecladoScanner = new Scanner(System.in);
 
     public static void imprimir(String texto) {
         System.out.println(texto);
@@ -11,15 +11,22 @@ public class Ex13_IMC {
 
     public static String lerTexto() {
         String texto;
-        texto = LER_TECLADO.nextLine(); //CONSTANTE
+        texto = tecladoScanner.nextLine(); 
         return texto;
     }
 
     public static double lerValorReal() {
         double valor;
-        valor = LER_TECLADO.nextDouble(); //CONSTANTE
+        valor = tecladoScanner.nextDouble(); 
         return valor;
     }
+
+    public static double caclucularIMC(double peso, double altura) {
+        double resultado;
+        resultado = peso / Math.pow(altura, 2);
+        return resultado;
+    }
+
     /*13. Algoritmo IMC – Elabore um algoritmo em fluxograma para calcular o IMC de uma pessoa
     e mostre a sua classificação.
 
@@ -46,7 +53,7 @@ public class Ex13_IMC {
         imprimir("Digite a altura:");
         altura = lerValorReal();
 
-        imc = peso/Math.pow(altura,2);
+        imc = caclucularIMC(peso, altura);
 
         if (imc < 18.5) {
             classificacaoImc = "Abaixo do peso";
@@ -62,7 +69,7 @@ public class Ex13_IMC {
             classificacaoImc = "Obesidade grau III ou mórbida";
         }
 
-        imprimir("O seu IMC é de: "+imc+classificacaoImc);
+        imprimir("O seu IMC é de: " + imc + ". " + classificacaoImc);
         }
 }
 

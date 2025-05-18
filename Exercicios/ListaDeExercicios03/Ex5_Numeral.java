@@ -22,22 +22,25 @@ public class Ex5_Numeral {
         return valor;
     }
 
-    /*5. Algoritmo numeral – Elaborar um algoritmo em fluxograma que leia um valor inteiro e
-    classifique-o se positivo, negativo ou zero. */
+    /*
+     * 5. Algoritmo numeral – Elaborar um algoritmo em fluxograma que leia um valor
+     * inteiro e
+     * classifique-o se positivo, negativo ou zero.
+     */
 
     public static void main(String[] args) {
         String posNeg = null;
         int numero = 0;
 
-    imprimir("Digite um número:");
-    numero = lerValorInteiro();
+        imprimir("Digite um número:");
+        numero = lerValorInteiro();
 
-    if (numero>0) {
-        posNeg = "Positivo";
-    }else{
-        posNeg = "Negativo";
-    }
+        if (numero > 0) {
+            posNeg = "Positivo";
+        } else {
+            posNeg = "Negativo";
+        }
 
-    imprimir(posNeg);
+        imprimir(posNeg);
     }
 }

@@ -1,13 +1,14 @@
 package Exercicios.ListaDeExercicios03;
+
 import java.util.Scanner;
 
 public class Ex9_AreaTrapezio {
-  
-   public static Scanner tecladoScanner = new Scanner(System.in);       
 
-    //método que recebe um texto e imprime na tela
+    public static Scanner tecladoScanner = new Scanner(System.in);
+
+    // método que recebe um texto e imprime na tela
     public static void imprimir(String texto) {
-       System.out.println(texto);
+        System.out.println(texto);
     }
 
     public static double lerValorReal() {
@@ -38,8 +39,8 @@ public class Ex9_AreaTrapezio {
      * usuário digitar algo inválido informar do erro.
      */
 
-        // variáveis
-        public static void main(String[] args) {
+    // variáveis
+    public static void main(String[] args) {
         double baseMenor = 0;
         double baseMaior = 0;
         double altura = 0;
