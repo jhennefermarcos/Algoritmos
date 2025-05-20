@@ -17,9 +17,9 @@ public class Ex2_CotacaoDolar {
     }
 
     public static double calcularValorReal(double cotacaoDolar, double valorDolar) {
-        double resultado;
-        resultado = cotacaoDolar * valorDolar;
-        return resultado;
+        double valorReal;
+        valorReal = cotacaoDolar * valorDolar;
+        return valorReal;
     }
 
     /*
